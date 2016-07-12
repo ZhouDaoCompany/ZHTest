@@ -85,19 +85,23 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/AwesomeCache.framework"
   install_framework "Pods/FDFullscreenPopGesture.framework"
+  install_framework "Pods/Kingfisher.framework"
+  install_framework "Pods/NVActivityIndicatorView.framework"
+  install_framework "Pods/RxSwift.framework"
+  install_framework "Pods/SKPhotoBrowser.framework"
   install_framework "Pods/SnapKit.framework"
   install_framework "Pods/SwiftyJSON.framework"
-  install_framework "Pods/YYCache.framework"
-  install_framework "Pods/YYImage.framework"
-  install_framework "Pods/YYWebImage.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/AwesomeCache.framework"
   install_framework "Pods/FDFullscreenPopGesture.framework"
+  install_framework "Pods/Kingfisher.framework"
+  install_framework "Pods/NVActivityIndicatorView.framework"
+  install_framework "Pods/RxSwift.framework"
+  install_framework "Pods/SKPhotoBrowser.framework"
   install_framework "Pods/SnapKit.framework"
   install_framework "Pods/SwiftyJSON.framework"
-  install_framework "Pods/YYCache.framework"
-  install_framework "Pods/YYImage.framework"
-  install_framework "Pods/YYWebImage.framework"
 fi
