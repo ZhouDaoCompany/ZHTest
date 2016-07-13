@@ -27,6 +27,8 @@ class ZFNetworkTool: NSObject {
                 UIApplication.sharedApplication().networkActivityIndicatorVisible = false
                 if let JSON = response.result.value {
                     success(json: JSON)
+                    
+                    print(JSON)
                 }
             })
         }else {
@@ -34,6 +36,8 @@ class ZFNetworkTool: NSObject {
                 UIApplication.sharedApplication().networkActivityIndicatorVisible = false
                 if let JSON = response.result.value {
                     success(json: JSON)
+                    print(JSON)
+
                 }
             }
             

@@ -12,13 +12,39 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var firstDisplay = true
+    var drawerController : MMViewController!
+    
+    
+    
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
     UIApplication.sharedApplication().networkActivityIndicatorVisible = true
-        
+        let mainFrame = UIScreen.mainScreen().bounds
+        window = UIWindow(frame: mainFrame)
+        window?.backgroundColor = UIColor.whiteColor()
+        //设置跟试图
+        setRootViewController()
+        //设置可见
+        window?.makeKeyAndVisible()
         return true
+    }
+    
+    func setRootViewController()  {
+        
+        let launchViewController = GET_SB("Main").instantiateViewControllerWithIdentifier("LaunchViewController")
+        self.window?.rootViewController = launchViewController
+        
+        let delay = dispatch_time(DISPATCH_TIME_NOW, Int64(2.5 * Double(NSEC_PER_SEC)))
+        dispatch_after(delay, dispatch_get_main_queue()) {
+            self.drawerController = MMViewController()
+            self.window?.rootViewController = self.drawerController
+            UIApplication.sharedApplication().statusBarHidden = false
+        }
+        
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {

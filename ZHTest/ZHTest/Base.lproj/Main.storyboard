@@ -1,25 +1,64 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--启动页-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LaunchViewController" id="BYZ-38-t0r" userLabel="启动页" customClass="LaunchViewController" customModule="ZHTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3h-0b-7BZ" customClass="JSAnimatedImagesView">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="yA5-eU-c18">
+                                <rect key="frame" x="110" y="557" width="155" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="EXF-2m-nPx"/>
+                                    <constraint firstAttribute="height" constant="80" id="qsV-Lr-Vvn"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;Pink Landscape&quot; © Timothy Wang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCz-WZ-emi">
+                                <rect key="frame" x="89" y="644" width="198" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k3h-0b-7BZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="C7y-tp-W32"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k3h-0b-7BZ" secondAttribute="trailing" constant="-20" id="GkO-qf-XdN"/>
+                            <constraint firstItem="QCz-WZ-emi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VZQ-zx-Lcw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yA5-eU-c18" secondAttribute="bottom" constant="30" id="XIH-w3-teS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k3h-0b-7BZ" secondAttribute="bottom" id="krf-9H-jEu"/>
+                            <constraint firstItem="k3h-0b-7BZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="ptj-VS-OVg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QCz-WZ-emi" secondAttribute="bottom" constant="8" id="rxJ-G9-3uy"/>
+                            <constraint firstItem="yA5-eU-c18" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yBj-cT-cgi"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="animatedImagesView" destination="k3h-0b-7BZ" id="Xjg-DI-vK3"/>
+                        <outlet property="text" destination="QCz-WZ-emi" id="Q7u-La-Y6o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo" width="311" height="154"/>
+    </resources>
 </document>

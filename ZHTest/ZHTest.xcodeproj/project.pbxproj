@@ -51,8 +51,9 @@
 		185931C01D34DE4900F948D4 /* NSURLSession+SynchronousTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185931B71D34DE4900F948D4 /* NSURLSession+SynchronousTask.swift */; };
 		185931C11D34DE4900F948D4 /* NavigationBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185931BA1D34DE4900F948D4 /* NavigationBarExtension.swift */; };
 		185931C21D34DE4900F948D4 /* ZFNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185931BC1D34DE4900F948D4 /* ZFNetworkTool.swift */; };
+		186635F81D35D8A800CF8765 /* MMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186635F71D35D8A800CF8765 /* MMViewController.swift */; };
+		186635FA1D35EA4A00CF8765 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186635F91D35EA4A00CF8765 /* LaunchViewController.swift */; };
 		18734A001D2F9FAC001A3E91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187349FF1D2F9FAC001A3E91 /* AppDelegate.swift */; };
-		18734A021D2F9FAC001A3E91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18734A011D2F9FAC001A3E91 /* ViewController.swift */; };
 		18734A051D2F9FAC001A3E91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18734A031D2F9FAC001A3E91 /* Main.storyboard */; };
 		18734A071D2F9FAC001A3E91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18734A061D2F9FAC001A3E91 /* Assets.xcassets */; };
 		18734A0A1D2F9FAC001A3E91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18734A081D2F9FAC001A3E91 /* LaunchScreen.storyboard */; };
@@ -167,9 +168,10 @@
 		185931B71D34DE4900F948D4 /* NSURLSession+SynchronousTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURLSession+SynchronousTask.swift"; sourceTree = "<group>"; };
 		185931BA1D34DE4900F948D4 /* NavigationBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarExtension.swift; sourceTree = "<group>"; };
 		185931BC1D34DE4900F948D4 /* ZFNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFNetworkTool.swift; sourceTree = "<group>"; };
+		186635F71D35D8A800CF8765 /* MMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMViewController.swift; sourceTree = "<group>"; };
+		186635F91D35EA4A00CF8765 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		187349FC1D2F9FAC001A3E91 /* ZHTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187349FF1D2F9FAC001A3E91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18734A011D2F9FAC001A3E91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18734A041D2F9FAC001A3E91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18734A061D2F9FAC001A3E91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18734A091D2F9FAC001A3E91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -471,6 +473,46 @@
 			path = NetWork;
 			sourceTree = "<group>";
 		};
+		186635F21D35D88100CF8765 /* Drawer */ = {
+			isa = PBXGroup;
+			children = (
+				186635F31D35D88100CF8765 /* Controller */,
+				186635F41D35D88100CF8765 /* Model */,
+				186635F51D35D88100CF8765 /* View */,
+				186635F61D35D88100CF8765 /* ViewModel */,
+			);
+			path = Drawer;
+			sourceTree = "<group>";
+		};
+		186635F31D35D88100CF8765 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				186635F71D35D8A800CF8765 /* MMViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		186635F41D35D88100CF8765 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		186635F51D35D88100CF8765 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		186635F61D35D88100CF8765 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		187349F31D2F9FAB001A3E91 = {
 			isa = PBXGroup;
 			children = (
@@ -497,8 +539,8 @@
 			isa = PBXGroup;
 			children = (
 				187349FF1D2F9FAC001A3E91 /* AppDelegate.swift */,
-				18734A011D2F9FAC001A3E91 /* ViewController.swift */,
 				185931AC1D34DC9700F948D4 /* ZHTest-Bridging-Header.h */,
+				186635F21D35D88100CF8765 /* Drawer */,
 				1859312E1D34D8E700F948D4 /* Lib */,
 				1883B8CE1D33733500380D09 /* Other */,
 				1883B8C61D3371C900380D09 /* Base */,
@@ -557,6 +599,7 @@
 		1883B8C91D3371C900380D09 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				186635F91D35EA4A00CF8765 /* LaunchViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -669,6 +712,7 @@
 				TargetAttributes = {
 					187349FB1D2F9FAC001A3E91 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6W5UTJ2U6X;
 					};
 					18734A0F1D2F9FAC001A3E91 = {
 						CreatedOnToolsVersion = 7.3;
@@ -782,7 +826,6 @@
 			files = (
 				1859319B1D34D8E700F948D4 /* UITabBar+Night.m in Sources */,
 				1859318E1D34D8E700F948D4 /* CALayer+Night.m in Sources */,
-				18734A021D2F9FAC001A3E91 /* ViewController.swift in Sources */,
 				1859318D1D34D8E700F948D4 /* NSObject+Night.m in Sources */,
 				185931941D34D8E700F948D4 /* UILabel+Night.m in Sources */,
 				185931A11D34D8E700F948D4 /* GradientView.m in Sources */,
@@ -814,6 +857,7 @@
 				185931961D34D8E700F948D4 /* UIPageControl+Night.m in Sources */,
 				185931991D34D8E700F948D4 /* UISlider+Night.m in Sources */,
 				185931A01D34D8E700F948D4 /* UIView+Night.m in Sources */,
+				186635F81D35D8A800CF8765 /* MMViewController.swift in Sources */,
 				185931AA1D34D8E700F948D4 /* DetailFooterView.m in Sources */,
 				1859319C1D34D8E700F948D4 /* UITableView+Night.m in Sources */,
 				185931A81D34D8E700F948D4 /* MSWeakTimer.m in Sources */,
@@ -823,6 +867,7 @@
 				185931971D34D8E700F948D4 /* UIProgressView+Night.m in Sources */,
 				185931A91D34D8E700F948D4 /* CircleRefreshView.m in Sources */,
 				1883B8D51D33733500380D09 /* ZFThemeConfig.swift in Sources */,
+				186635FA1D35EA4A00CF8765 /* LaunchViewController.swift in Sources */,
 				185931C01D34DE4900F948D4 /* NSURLSession+SynchronousTask.swift in Sources */,
 				1883B8D31D33733500380D09 /* ZFAPIConfig.swift in Sources */,
 				1883B8CD1D33722600380D09 /* ZFBaseViewController.swift in Sources */,
@@ -975,11 +1020,14 @@
 			baseConfigurationReference = DD9A6A2231F177B4CB4F69B1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ZHTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JiaCheng.ZHTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ZHTest/ZHTest-Bridging-Header.h";
 			};
 			name = Debug;
@@ -989,11 +1037,14 @@
 			baseConfigurationReference = B43A501786100CB330C63D3D /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ZHTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JiaCheng.ZHTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ZHTest/ZHTest-Bridging-Header.h";
 			};
 			name = Release;
