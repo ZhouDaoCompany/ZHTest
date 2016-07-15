@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1843C5B11D387D0600414C2E /* ZFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843C5B01D387D0600414C2E /* ZFHomeViewController.swift */; };
+		1843C5B31D38925E00414C2E /* ZFHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843C5B21D38925E00414C2E /* ZFHomeCell.swift */; };
 		185931861D34D8E700F948D4 /* AuxiliaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185931301D34D8E700F948D4 /* AuxiliaryModels.swift */; };
 		185931871D34D8E700F948D4 /* CyclePictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185931311D34D8E700F948D4 /* CyclePictureCell.swift */; };
 		185931881D34D8E700F948D4 /* CyclePictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185931321D34D8E700F948D4 /* CyclePictureView.swift */; };
@@ -85,6 +87,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1843C5B01D387D0600414C2E /* ZFHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFHomeViewController.swift; sourceTree = "<group>"; };
+		1843C5B21D38925E00414C2E /* ZFHomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFHomeCell.swift; sourceTree = "<group>"; };
 		185931301D34D8E700F948D4 /* AuxiliaryModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuxiliaryModels.swift; sourceTree = "<group>"; };
 		185931311D34D8E700F948D4 /* CyclePictureCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CyclePictureCell.swift; sourceTree = "<group>"; };
 		185931321D34D8E700F948D4 /* CyclePictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CyclePictureView.swift; sourceTree = "<group>"; };
@@ -218,6 +222,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1843C5AB1D387CD300414C2E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1843C5AC1D387CD300414C2E /* Controller */,
+				1843C5AD1D387CD300414C2E /* Model */,
+				1843C5AE1D387CD300414C2E /* View */,
+				1843C5AF1D387CD300414C2E /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1843C5AC1D387CD300414C2E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1843C5B01D387D0600414C2E /* ZFHomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1843C5AD1D387CD300414C2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1843C5AE1D387CD300414C2E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1843C5B21D38925E00414C2E /* ZFHomeCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1843C5AF1D387CD300414C2E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		1859312E1D34D8E700F948D4 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -540,6 +585,7 @@
 			children = (
 				187349FF1D2F9FAC001A3E91 /* AppDelegate.swift */,
 				185931AC1D34DC9700F948D4 /* ZHTest-Bridging-Header.h */,
+				1843C5AB1D387CD300414C2E /* Home */,
 				186635F21D35D88100CF8765 /* Drawer */,
 				1859312E1D34D8E700F948D4 /* Lib */,
 				1883B8CE1D33733500380D09 /* Other */,
@@ -846,6 +892,7 @@
 				1883B8D41D33733500380D09 /* ZFAppConfig.swift in Sources */,
 				185931AB1D34D8E700F948D4 /* DetailHeaderView.m in Sources */,
 				1859318F1D34D8E700F948D4 /* UIButton+Night.m in Sources */,
+				1843C5B11D387D0600414C2E /* ZFHomeViewController.swift in Sources */,
 				185931861D34D8E700F948D4 /* AuxiliaryModels.swift in Sources */,
 				185931A61D34D8E700F948D4 /* MMDrawerVisualState.m in Sources */,
 				1859319E1D34D8E700F948D4 /* UITextView+Night.m in Sources */,
@@ -855,6 +902,7 @@
 				185931921D34D8E700F948D4 /* UIBarButtonItem+Night.m in Sources */,
 				1859318B1D34D8E700F948D4 /* DKImage.m in Sources */,
 				185931961D34D8E700F948D4 /* UIPageControl+Night.m in Sources */,
+				1843C5B31D38925E00414C2E /* ZFHomeCell.swift in Sources */,
 				185931991D34D8E700F948D4 /* UISlider+Night.m in Sources */,
 				185931A01D34D8E700F948D4 /* UIView+Night.m in Sources */,
 				186635F81D35D8A800CF8765 /* MMViewController.swift in Sources */,
