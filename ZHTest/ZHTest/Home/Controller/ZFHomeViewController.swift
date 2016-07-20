@@ -9,6 +9,17 @@
 import UIKit
 
 class ZFHomeViewController: ZFBaseViewController {
+    
+    // 轮播图view
+    var cyclePictureView : CyclePictureView!
+    // 轮播图数组
+    var imageURLArray : [String] = []
+    // 轮播图的标题数据
+    var imageTitleArray : [String] = []
+    //
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

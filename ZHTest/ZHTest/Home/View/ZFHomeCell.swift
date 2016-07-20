@@ -16,12 +16,17 @@ class ZFHomeCell: UITableViewCell {
     
     @IBOutlet weak var moreImageView: UIImageView!
     
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         dk_backgroundColorPicker = CELL_COLOR
         titleLabel.dk_backgroundColorPicker = CELL_COLOR
         selectionStyle = .None
+        
+        titleLabel.text = "测试"
         
     }
 
