@@ -53,6 +53,11 @@ func GCD_Delay (second : NSTimeInterval ) -> dispatch_time_t {
 func FONT (size : CGFloat) -> UIFont {
     return UIFont.systemFontOfSize(size)
 }
+func LRRandomColor() -> UIColor{
+    return UIColor(red: CGFloat(CGFloat(random())/CGFloat(RAND_MAX)), green: CGFloat(CGFloat(random())/CGFloat(RAND_MAX)), blue: CGFloat(CGFloat(random())/CGFloat(RAND_MAX)), alpha: 1)
+}
+
+
 
 
 // 切圆角

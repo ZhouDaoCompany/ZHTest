@@ -14,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var firstDisplay = true
     var drawerController : MMViewController!
+    var homeViewController : ZFHomeViewController!
     
     
     
@@ -36,14 +37,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let launchViewController = GET_SB("Main").instantiateViewControllerWithIdentifier("LaunchViewController")
         self.window?.rootViewController = launchViewController
-        
+
         let delay = dispatch_time(DISPATCH_TIME_NOW, Int64(2.5 * Double(NSEC_PER_SEC)))
         dispatch_after(delay, dispatch_get_main_queue()) {
-            self.drawerController = MMViewController()
-            self.window?.rootViewController = self.drawerController
+            
+            self.homeViewController = ZFHomeViewController()
+            self.window?.rootViewController = self.homeViewController
             UIApplication.sharedApplication().statusBarHidden = false
         }
-        
         
     }
 

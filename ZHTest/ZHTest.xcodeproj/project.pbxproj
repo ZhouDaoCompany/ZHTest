@@ -55,6 +55,7 @@
 		185931C21D34DE4900F948D4 /* ZFNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185931BC1D34DE4900F948D4 /* ZFNetworkTool.swift */; };
 		186635F81D35D8A800CF8765 /* MMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186635F71D35D8A800CF8765 /* MMViewController.swift */; };
 		186635FA1D35EA4A00CF8765 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186635F91D35EA4A00CF8765 /* LaunchViewController.swift */; };
+		187299F61D41CD010003BE1B /* ZFStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187299F51D41CD010003BE1B /* ZFStories.swift */; };
 		18734A001D2F9FAC001A3E91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187349FF1D2F9FAC001A3E91 /* AppDelegate.swift */; };
 		18734A051D2F9FAC001A3E91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18734A031D2F9FAC001A3E91 /* Main.storyboard */; };
 		18734A071D2F9FAC001A3E91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18734A061D2F9FAC001A3E91 /* Assets.xcassets */; };
@@ -174,6 +175,8 @@
 		185931BC1D34DE4900F948D4 /* ZFNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFNetworkTool.swift; sourceTree = "<group>"; };
 		186635F71D35D8A800CF8765 /* MMViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMViewController.swift; sourceTree = "<group>"; };
 		186635F91D35EA4A00CF8765 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		187299F41D41CCDE0003BE1B /* WZLSerializeKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLSerializeKit.h; sourceTree = "<group>"; };
+		187299F51D41CD010003BE1B /* ZFStories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFStories.swift; sourceTree = "<group>"; };
 		187349FC1D2F9FAC001A3E91 /* ZHTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		187349FF1D2F9FAC001A3E91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18734A041D2F9FAC001A3E91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -244,6 +247,7 @@
 		1843C5AD1D387CD300414C2E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				187299F51D41CD010003BE1B /* ZFStories.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,6 +270,7 @@
 		1859312E1D34D8E700F948D4 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				187299F41D41CCDE0003BE1B /* WZLSerializeKit.h */,
 				1859312F1D34D8E700F948D4 /* CyclePictureView */,
 				185931331D34D8E700F948D4 /* DKNightVersion */,
 				185931691D34D8E700F948D4 /* GradientView */,
@@ -885,6 +890,7 @@
 				185931BF1D34DE4900F948D4 /* AppException.swift in Sources */,
 				1883B8CB1D33720800380D09 /* ZFBaseNavigationController.swift in Sources */,
 				1859319D1D34D8E700F948D4 /* UITextField+Night.m in Sources */,
+				187299F61D41CD010003BE1B /* ZFStories.swift in Sources */,
 				185931C21D34DE4900F948D4 /* ZFNetworkTool.swift in Sources */,
 				1859319F1D34D8E700F948D4 /* UIToolBar+Night.m in Sources */,
 				185931871D34D8E700F948D4 /* CyclePictureCell.swift in Sources */,
