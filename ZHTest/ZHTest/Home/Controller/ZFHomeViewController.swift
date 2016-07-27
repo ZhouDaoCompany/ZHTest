@@ -68,6 +68,102 @@ class ZFHomeViewController: ZFBaseViewController {
 //        
         
         
+//        let str = "ttttrrrrcxcavhsvhxasiiqdwqcfffffffff"
+//        
+//        
+//        var arr:[Character] = []
+//        var orderStr = ""
+//        
+//        
+//        for ch in str.characters {
+//            
+//            arr.append(ch)
+//        }
+//        
+//        for var i = arr.count - 1; i >= 0; i -= 1 {
+//            
+//            var ch:Character = arr[i]
+//            
+//            orderStr.append(ch)
+//            
+//        }
+//        print(orderStr)
+        
+        
+        
+//        var arr : [String] = []
+//        var arr1 : Array<String>
+//        var arr3 = Array<String>()
+//        var arr4 = Array<String>(count: 10, repeatedValue: "111")
+//        var arr5 = ["1","2"]
+//        arr5[0..<arr5.count] = []
+//        arr4.removeAll()
+//        
+//        
+//        var myDic = Dictionary<String, String>()
+//        
+//        var dic:[String : String] = [:]
+        
+        
+        
+        
+        
+        
+        var arr = Array<String>()
+        var arr1 = ["1","2"]
+        var arr2:[String] = []
+        var arr3 = Array<String>(count: 10, repeatedValue: "22")
+        
+        var aDict = Dictionary<String, String>()
+        var dic:[String : String] = [:]
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+//        var statues:[Character:Int] = [:]
+//        for ch in str.characters {
+//            
+//            let num = statues[ch]
+//            
+//            if num == nil {
+//                
+//                statues[ch] = 1
+//            }else {
+//                statues[ch] = num! + 1
+//            }
+//            
+//        }
+//        
+//        var maxNum = 0
+//        
+//        for occures in Array(statues.values) {
+//            if occures > maxNum {
+//                maxNum = occures
+//            }
+//        }
+//        
+//        for (ch, occures) in statues {
+//            if occures == maxNum {
+//                print(ch)
+//            }
+//        }
+        
+        
+        
         
         
 //        tableView = UITableView(frame: rectFrame)
